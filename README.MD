@@ -48,7 +48,8 @@ ON sales.transactions.order_date=sales.date.date where sales.date.year=2020 and 
 
 2 Model the data into an appropriate star schema as shown below.
 
-![Star-schema]()
+![image](https://user-images.githubusercontent.com/98240082/168786563-b86c3ad7-9c4d-49a6-bb07-ca5b9f951cfd.png)
+
 
 3 Filter New York and Paris from the markets table
 ```
@@ -70,9 +71,9 @@ ON sales.transactions.order_date=sales.date.date where sales.date.year=2020 and 
 = Table.SelectRows(#"Converting USD to INR", each ([currency] = "INR#(cr)" or [currency] = "USD#(cr)"))
 ```
 7 Build a report with the transformed data as shown below.
+![image](https://user-images.githubusercontent.com/98240082/168786185-7e135d16-3743-4959-ace7-2772c637516e.png)
 
 
-![thems](C:\Users\UCTAdmin\Documents\Workspace\Images\schema.PNG)
 
 
 
